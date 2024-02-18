@@ -297,6 +297,7 @@ DELIMITER ;
 
 -- Procedure for updating rehab_stays status
 DELIMITER //
+
 CREATE PROCEDURE update_rehab_stays_status(
     IN p_stay_id INT,
     IN p_new_status ENUM ('in process', 'rejected', 'approved'),
